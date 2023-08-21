@@ -1,16 +1,16 @@
 {
-  "Systems":[
+  "Systems": [
   {
-    "name":"System 1",
-    "SID":"SY1",
+    "Name": "System 1",
+    "SID": "SY1",
   },
   {
-    "name":"System 2",
-    "SID":"SY2",
+    "Name": "System 2",
+    "SID": "SY2",
   },
   {
-    "name":"System 3",
-    "SID":"SY3",
+    "Name": "System 3",
+    "SID": "SY3",
   }
   ]
 }
