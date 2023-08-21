@@ -3,7 +3,12 @@
     <head>
 
         
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.p">
+  		
+		<script src="Random.js">
+  	
+  		</script>
 
         
         <title>Your page's title goes here</title>
@@ -13,22 +18,14 @@
         <p>And this is a paragraph.</p>
 
 
-        <p><a href="no-javascript.html" id="getNumber">Générer</a> un nombre aléatoire. </p>
-
-<h2 id="result"></h2>
-
-  <script>
-    var link = document.getElementById('getNumber'); 
-    link.onclick = getNumber; 
-    
-    function getNumber() {
-        var minNumber = 1; // le minimum
-        var maxNumber = 100; // le maximum
-        var randomnumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-        $('#result').html(randomnumber);
-        return false;
-    }   
-  </script>
+        <main>
+			<div align=center>
+				<button onclick="ShowRandomNumber()" style="margin-top:50%">RANDOM</button>
+		<br><br>	<input id="number" value="0" type="number" onchange="check_value(this.value)" oninput="check_value(this.value)">
+				<output id ="a"></output>
+		<br>		<output id ="x" style="display:none; color:red; font-size:33%;">Number should be in the legal range i.e. 0-999</output>
+			</div>
+		</main>
         
         
     </body>
